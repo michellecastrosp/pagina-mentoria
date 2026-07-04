@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antes de eu criar, quero te ouvir | Michelle Castro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#150a0f;--bg2:#1e0d14;--panel:#25121b;--wine:#5a1b2e;
+  --cream:#F1E7DA;--muted:#BFAD9F;--gold:#C7A253;--gold2:#E7CD8C;--line:rgba(199,162,83,.32);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--cream);font-family:'Jost','Helvetica Neue',Arial,sans-serif;font-weight:300;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:0 24px}
+h1,h2,h3,legend{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.15}
+em{font-style:italic}
+
+/* header */
+.top{text-align:center;padding:56px 24px 30px;background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.brand{font-family:'Cormorant Garamond',serif;font-size:20px;letter-spacing:.34em;text-transform:uppercase}
+.brand small{display:block;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.5em;color:var(--gold2);margin-top:8px}
+.ornament{display:flex;align-items:center;justify-content:center;gap:16px;margin:26px auto 22px;max-width:280px}
+.ornament span{flex:1;height:1px;background:var(--line)}
+.ornament b{color:var(--gold);font-size:14px}
+.top h1{font-size:33px;margin:0 auto 16px;max-width:520px}
+.top p{color:var(--muted);max-width:480px;margin:0 auto;font-size:16px}
+.timepill{display:inline-block;margin-top:18px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);border:1px solid var(--line);border-radius:20px;padding:6px 16px}
+
+/* form */
+form{padding:20px 0 40px}
+fieldset{border:none;border-top:1px solid rgba(199,162,83,.16);padding:34px 0 6px;margin:0}
+fieldset:first-of-type{border-top:none}
+legend{font-size:22px;color:var(--cream);padding:0;margin-bottom:6px;display:block;width:100%}
+.qnum{font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:10px}
+.hint{color:var(--muted);font-size:14px;margin-bottom:16px;font-style:italic;font-family:'Cormorant Garamond',serif}
+.req{color:var(--gold2);font-size:13px}
+
+.opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1px solid rgba(199,162,83,.2);border-radius:3px;margin-bottom:10px;cursor:pointer;transition:border-color .2s,background .2s;color:var(--cream);line-height:1.5}
+.opt:hover{border-color:var(--gold)}
+.opt input{accent-color:var(--gold);margin-top:5px;flex-shrink:0;width:16px;height:16px}
+.opt:has(input:checked){border-color:var(--gold);background:rgba(90,27,46,.28)}
+
+textarea,input[type=text]{width:100%;background:rgba(37,18,27,.5);border:1px solid var(--line);border-radius:3px;color:var(--cream);font-family:'Jost',sans-serif;font-size:16px;padding:14px 16px;line-height:1.6;resize:vertical}
+textarea{min-height:110px}
+textarea::placeholder,input::placeholder{color:#8a7a6e}
+textarea:focus,input:focus{outline:none;border-color:var(--gold)}
+
+.submit{display:block;width:100%;margin:38px auto 0;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1017;font-family:'Jost',sans-serif;font-weight:500;font-size:15px;letter-spacing:.12em;text-transform:uppercase;border:none;border-radius:2px;padding:19px;cursor:pointer;box-shadow:0 14px 40px rgba(199,162,83,.26);transition:transform .2s}
+.submit:hover{transform:translateY(-2px)}
+.priv{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+
+/* success */
+#thanks{display:none;text-align:center;padding:90px 24px}
+#thanks .ic{font-size:40px;color:var(--gold2);margin-bottom:20px}
+#thanks h2{font-size:34px;margin-bottom:16px}
+#thanks p{color:var(--muted);max-width:440px;margin:0 auto}
+
+.setup{max-width:640px;margin:0 auto;padding:14px 20px;background:rgba(224,163,163,.08);border:1px dashed rgba(224,163,163,.45);border-radius:4px;color:#f0c9c9;font-size:13px;font-family:'Jost',sans-serif;line-height:1.6}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:34px 24px 50px;border-top:1px solid rgba(199,162,83,.12)}
+footer b{font-family:'Cormorant Garamond',serif;letter-spacing:.28em;text-transform:uppercase;color:var(--cream)}
+@media(min-width:640px){.top h1{font-size:40px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="brand">Michelle Castro<small>Mundo Executiva</small></div>
+  <div class="ornament"><span></span><b>&#10022;</b><span></span></div>
+  <h1>Antes de eu criar, <em>quero te ouvir</em>.</h1>
+  <p>Estou preparando algo novo sobre autoridade, posicionamento e propósito, e quero que faça sentido de verdade pra você. Pode responder sem se identificar, e não existe resposta certa.</p>
+  <span class="timepill">Leva 2 minutos</span>
+</div>
+
+<div class="wrap">
+<form id="form" action="https://formspree.io/f/xdaryqpn" method="POST">
+  <input type="hidden" name="_subject" value="Nova resposta - Pesquisa Mentoria">
+  <input type="hidden" name="_next" id="_next" value="">
+
+  <fieldset>
+    <span class="qnum">Pergunta 01</span>
+    <legend>Em que momento você está hoje?</legend>
+    <label class="opt"><input type="radio" name="1_momento" value="Executiva ou profissional em cargo, dentro de uma empresa"><span>Executiva ou profissional em cargo, dentro de uma empresa</span></label>
+    <label class="opt"><input type="radio" name="1_momento" value="Líder ou gestora de equipe"><span>Líder ou gestora de equipe</span></label>
+    <label class="opt"><input type="radio" name="1_momento" value="Empreendedora ou autônoma"><span>Empreendedora ou autônoma</span></label>
+    <label class="opt"><input type="radio" name="1_momento" value="Em transição (saindo do corporativo, ou mudando de área)"><span>Em transição (saindo do corporativo, ou mudando de área)</span></label>
+    <label class="opt"><input type="radio" name="1_momento" value="Palestrante ou mentora começando"><span>Palestrante ou mentora começando</span></label>
+    <label class="opt"><input type="radio" name="1_momento" value="Outro"><span>Outro</span></label>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 02</span>
+    <legend>Entre estas, qual mais parece com você hoje?</legend>
+    <label class="opt"><input type="radio" name="2_dor" value="Sou competente, mas não me reconhecem como referência"><span>Sou competente, mas sinto que não me reconhecem como referência</span></label>
+    <label class="opt"><input type="radio" name="2_dor" value="Sei do que falo, mas travo na hora de me posicionar"><span>Sei do que falo, mas travo na hora de me posicionar ou aparecer</span></label>
+    <label class="opt"><input type="radio" name="2_dor" value="Não tenho clareza da minha mensagem"><span>Não tenho clareza da minha mensagem, falo de muita coisa</span></label>
+    <label class="opt"><input type="radio" name="2_dor" value="Cobro menos do que entrego"><span>Cobro menos do que entrego</span></label>
+    <label class="opt"><input type="radio" name="2_dor" value="Por fora comunico uma coisa, por dentro sou outra"><span>Por fora eu comunico uma coisa, por dentro sou outra</span></label>
+    <label class="opt"><input type="radio" name="2_dor" value="Outro"><span>Outro</span></label>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 03 <span class="req">&#183; obrigatória</span></span>
+    <legend>Qual é a maior frustração que você sente hoje na sua carreira ou no seu negócio?</legend>
+    <p class="hint">Com as suas palavras, do jeito que vier. É a pergunta que mais me ajuda.</p>
+    <textarea name="3_frustracao" required placeholder="Escreva aqui..."></textarea>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 04</span>
+    <legend>O que precisaria mudar pra você dizer <em>valeu muito a pena</em>?</legend>
+    <p class="hint">Imagine que daqui a 3 ou 4 meses uma coisa se resolveu. O que teria acontecido?</p>
+    <textarea name="4_desejo" placeholder="Escreva aqui..."></textarea>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 05</span>
+    <legend>O que você já tentou pra resolver isso?</legend>
+    <p class="hint">E por que sente que não resolveu de vez?</p>
+    <textarea name="5_ja_tentou" placeholder="Escreva aqui..."></textarea>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 06</span>
+    <legend>Qual frase mais parece algo que <em>você diria</em>?</legend>
+    <label class="opt"><input type="radio" name="6_frase" value="Sei que sou boa, mas parece que ninguém percebe"><span>"Eu sei que sou boa, mas parece que ninguém percebe."</span></label>
+    <label class="opt"><input type="radio" name="6_frase" value="Tenho medo de parecer que estou me achando"><span>"Tenho medo de parecer que estou me achando."</span></label>
+    <label class="opt"><input type="radio" name="6_frase" value="Vejo gente com metade do meu conhecimento na minha frente"><span>"Vejo gente com metade do meu conhecimento na minha frente."</span></label>
+    <label class="opt"><input type="radio" name="6_frase" value="Não sei me mostrar sem parecer falsa"><span>"Não sei me mostrar sem parecer falsa."</span></label>
+    <label class="opt"><input type="radio" name="6_frase" value="Sinto que me perdi de quem eu sou"><span>"Sinto que me perdi de quem eu sou."</span></label>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 07</span>
+    <legend>O que mais te faz <em>hesitar</em> em buscar ajuda pra se posicionar?</legend>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Acho que já deveria dar conta sozinha"><span>Acho que já deveria dar conta sozinha</span></label>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Medo de investir e não ter resultado"><span>Medo de investir e não ter resultado</span></label>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Falta de tempo"><span>Falta de tempo</span></label>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Acho que o mercado já está cheio disso"><span>Acho que o mercado já está cheio de gente falando disso</span></label>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Não é o momento certo agora"><span>Não é o momento certo agora</span></label>
+    <label class="opt"><input type="radio" name="7_hesitacao" value="Nada, eu buscaria sem hesitar"><span>Nada, eu buscaria sem hesitar</span></label>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 08 <span class="req">&#183; opcional</span></span>
+    <legend>Você já investiu em algo pra resolver isso?</legend>
+    <p class="hint">Se sim, o que foi (curso, mentoria, terapia, consultoria) e quanto mais ou menos custou?</p>
+    <textarea name="8_investimento" placeholder="Escreva aqui, ou deixe em branco..."></textarea>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pergunta 09</span>
+    <legend>Se existisse um caminho claro pra resolver isso, como você se sente?</legend>
+    <label class="opt"><input type="radio" name="9_temperatura" value="Preciso disso agora"><span>Preciso disso agora</span></label>
+    <label class="opt"><input type="radio" name="9_temperatura" value="Quero em breve"><span>Quero em breve</span></label>
+    <label class="opt"><input type="radio" name="9_temperatura" value="Tenho curiosidade, mas sem pressa"><span>Tenho curiosidade, mas sem pressa</span></label>
+  </fieldset>
+
+  <fieldset>
+    <span class="qnum">Pra terminar <span class="req">&#183; opcional</span></span>
+    <legend>Quer que eu te avise quando eu abrir algo sobre isso?</legend>
+    <p class="hint">Deixa seu @ do Instagram ou e-mail. Fica só entre a gente.</p>
+    <input type="text" name="10_contato" placeholder="@seuinstagram ou seu e-mail">
+  </fieldset>
+
+  <button type="submit" class="submit">Enviar minhas respostas</button>
+  <p class="priv">Suas respostas são anônimas e usadas só pra eu criar algo melhor pra você.</p>
+</form>
+</div>
+
+<div id="thanks">
+  <div class="ic">&#10022;</div>
+  <h2>Recebi, obrigada.</h2>
+  <p>De verdade. Cada palavra que você escreveu me ajuda a criar algo que faça sentido pra quem, como você, já construiu muito e merece ser reconhecida por isso.</p>
+</div>
+
+<footer>
+  <b>Michelle Castro</b><br>Mundo Executiva &#183; @michellecastrosp
+</footer>
+
+<script>
+(function(){
+  // Se voltou do envio (Formspree redireciona pra ca com ?enviado=1), mostra o agradecimento
+  var params = new URLSearchParams(window.location.search);
+  if(params.get('enviado') === '1'){
+    var wrap = document.querySelector('.wrap'); if(wrap) wrap.style.display='none';
+    var top = document.querySelector('.top'); if(top) top.style.display='none';
+    var th = document.getElementById('thanks'); if(th) th.style.display='block';
+    window.scrollTo(0,0);
+    return;
+  }
+  var form = document.getElementById('form');
+  form.addEventListener('submit', function(){
+    // Diz ao Formspree pra, depois de processar, voltar pra esta mesma pagina com a tela de obrigada
+    var base = window.location.href.split('?')[0].split('#')[0];
+    document.getElementById('_next').value = base + '?enviado=1';
+    var btn = form.querySelector('.submit');
+    btn.textContent = 'Enviando...'; btn.disabled = true;
+    // envio normal (pagina inteira), mais compativel que o metodo em segundo plano
+  });
+})();
+</script>
+</body>
+</html>
